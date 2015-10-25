@@ -36,3 +36,9 @@ Using Git Bash, I was able to successfully use Unix commands while still in Wind
 * help: displays a list of shell commands
 
 # 1.4 Forking and Cloning Reflection
+
+Time: 1 hr
+
+To create a new repo (repository) is easy. While logged on to GitHub, go to the main page, and look in the top right corner of the page for the plus sign. Select "new repository" from the menu and you will be taken to a page where you can name and select the privacy and license for a new (empty) repository. To fork an existing repository (copy it), go to the page for that repository and press the "Fork" button in the upper right. You'll then have a copy in your repositories. You'll want to do this any time you want to work with a repository without affecting the original. To clone a repository - that is, copy it to your own computer - open the command line. Type "git clone" and the provided link to the repository (found on the repository page, on the left). This will copy it to the current directory open. 
+
+The struggles I am having with git are a continuation of my earlier problems understanding my virtual machine. I cloned the repositories both onto Windows and in my VM. I am not sure how to work with them when it comes to the VM and how Sublime comes into play. I will have to reach out for help with this issue.
