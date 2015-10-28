@@ -1,4 +1,4 @@
-![my sitemap](/imgs/site_map.png)
+![my sitemap](https://github.com/kb-diangelo/phase-0/blob/master/week-2/imgs/site_map.png)
 created in beautiful MS Paint
 
 1. What are the 6 Phases of Web Design?
