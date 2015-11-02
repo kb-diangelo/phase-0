@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>KB's Technical Blog</title>
+</head>
+<body>
+	<article>
+		<h1>The Command Line and Git</h1>
+		<p>
+			Week 1 of DBC introduced two really important concepts to me: using the command line to control my computer, and version control.
+		</p> 
+	    <section>
+	    <h2>The Command Line</h2>
+	   	<p>
+	      The command line is an interface for interacting with my computer. Using the instructions that DBC provided, I was able to install an application called Git Bash. This provides me with a command line with which I can interact with Windows: make, remove, rename, and delete files and directories, all by typing instructions for the computer to follow. From within Git Bash I can also use my virtual machine, or VM, which I also installed using DBC instructions. I had to do some research on my own to understand exactly what a VM was and how my VM works. Basically, it's an emulation of a computer on my computer. My VM is a machine running Ubuntu, a Linux operating system. I also interact with the VM by using commands in the command line. Thankfully, there's a shared directory between my "two" computers. I can create files on my VM and see them in Windows, and vice versa. 
+	    </p>
+	    <p>	    
+	        Using the command line not only makes me feel like a hacker from a movie from the 1990s, it is very efficient, and allows me to deliberately and methodically do things that would be difficult or impossible by just using the Windows File Explorer. I haven't yet done much exploration on my own about all the things the command line in Git Bash can do, both in Windows and the VM (partially because I'm still afraid of messing everything up) but I'm very interested in seeing its capabilities.
+	    </p>
+		</section>
+	    <section>
+	    <h2>Git and Version Control</h2>
+	    <p>
+	        The other major topic I learned about this week was version control and the tools I'll be using to do it: git and GitHub. Version control is keeping track of changes made to your project (in our case, code, but it could really be anything) - what changes were made, when, by whom and why. Version control allows you to keep track of what's happening to your project and to undo or roll back changes that didn't work out the way you wanted them to, or which were made accidentally.
+	   </p>
+	        Git is a tool that runs in the command line that we're using for version control. The basic idea behind git is that there is a clean "master" copy of whatever we're working on. We know that the master works the way we want it to. When we want to make changes or additions, we first create a "branch". We do our work in the branch, save it, and when and only when we're sure it's in good shape, we "merge" it back to the master.
+	    <p>
+	    	There is a specific workflow involved in using git to keep track of changes. I won't go over the specific commands involved here because if you are reading this blog you probably already know them. But the general outline goes something like this:
+	      <br />
+	  <ul>
+	      <li>create a branch</li>
+	      <li>do whatever work you need to do - add, modify files & directories, etc</li>
+	      <li>check to see what files/directories you've modified. They will be considered "working", not "staged". Staged means that they are ready to be committed (saved)</li>
+	      <li>"add" your files/directories to stage them</li>
+	      <li>commit the changes to your branch</li>
+	     <li>push the changed branch to your origin repository, which is probably stored on GitHub</li>
+	      <li>put in a pull request, so someone (or yourself in our case) can compare them to the origin master before merging</li>
+	      <li>merge your branch to the master branch on GitHub</li>
+	      <li>pull the new master to your local repository</li>
+	      <li>delete the old working branch locally and on GitHub</li>
+	  </ul>
+	   </p>
+	   <p>
+	        In the steps above, I mention GitHub a few times. GitHub is a website where you can upload and store your projects. This makes it easier when many people are working on the same project, as there is a local hub for all the changes made by all contributors. GitHub also has built in tools to allow you to do pull requests and merges.
+	    </p>
+		</section>
+		<p>
+	        I hope you enjoyed my long and probably not that interesting blog post about what I learned this week at DBC!
+	    </p>
+	</article>
+</body>
+</html>
