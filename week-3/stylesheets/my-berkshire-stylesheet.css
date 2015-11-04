@@ -1,0 +1,110 @@
+/*
+
+KB DiAngelo 11/04/2015 3.3 Beginning CSS Reflection
+
+
+- What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+    You have to create a <link> (self-closing) tag to to your <head> section that refers to your stylesheet. There are three elements in this <link> tag that you must include that will let the browser know what and where you are linking: type="text/css", which tells the browswer that it is a text (css) document it should be looking for, rel="stylesheet", which tells the browser that the relationship that this document has to the html document is that of a stylesheet, and href="[your stylesheet location, which ideally should be relative, not absolute]", which tells the browswer the address of your stylesheet document.
+
+- What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+    It was rather difficult to get the site to look how I wanted it. The two columns my pair and I figured out pretty quickly - we divided them into <section>s and id'd them as leftcolumn and rightcolumn. Then in our css sheet we made these sections into inline blocks with the float left and float right properties respectively. Harder was making the spaces around the various elements: the unordered items in the list, the space under the horizontal lines, etc. Eventually I figured out that we could do this by adding margin:[# of]px to the css for these elements. But as for the number of points of spacing, I was just eyeballing. I would have to have checked the source code for the originial page to know exactly how much spacing to put.
+
+- What CSS did you use to modify the element style (like size, color, etc.)
+    
+    Font size - font-size:mysize;
+    Text color - color:mycolor;
+    All uppercase (used in the Geico section) - text-transform:uppercase;
+    Width of element - width:mywidth%;
+    Height of an element (used in the horizontal lines) - height:myheight;
+    Putting things on their own line - display:block;
+    Putting things together on one line - display:inline-block;
+    Making sure things didn't squeeze in between other things - clear:both;
+    Bolding - font-weight:bold;
+    Centering - text-align:center;
+    Adding space beneath an element - margin-bottom:howeverbiginpixels;
+
+- Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+
+    My pair and I decided to use classes extensively. We made eight different classes and added them to the HTML. It was the best way we could think of to style different aspects of the page differently. We only made two IDs - for the right column and the left column. We knew there was only going to be one instance of each so it made more sense to use an ID than making a class that could be applied to more than one thing. We used classes for everything else because they either were applied to more than one thing or made sense that they could be applied to more than one thing. The best example of this is the class "description", which we used several times to modify the description of the various links on the page. So in summary: class makes more sense if you're going to reuse that styling for more than one element, ID makes more sense if you know for certain you're only styling one element.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+    The original Berkshire Hathaway site was made entirely in HTML, no CSS whatsoever.  I think there are several reasons why what we did, using CSS, is better:
+        - it separates styling from the content of the page
+        - it allows styling to be reused over and over for diffent pages
+        - it's less repetitive - they changed every link descriptor exactly the same way over and over again using HTML while we made one class to apply the same changes to each one
+        - if we were to be creating a more beautiful, modern-looking site than a clone of the Berkshire Hathaway home page, CSS would give us the tools to do that where HTML is very limited
+    That being said, there were certain things I did with the CSS and HTML, such as creating <span>s who would display as blocks to get text on its own line instead of just using <br> in the HTML, and making my own horizontal line <div>s instea of <hr>, that seemed unnecessary and more trouble than they were worth.
+*/
+
+* {
+    color: #000080;
+    background-color: #ffffff;
+}
+a {
+    color: #800080;
+}
+a:visited {
+    color: #ff0000;
+}
+
+#leftcolumn {
+    width: 45%;
+    display: inline-block;
+    float: left;
+}
+
+#rightcolumn {
+    width: 45%;
+    display: inline-block;
+    float: right;
+}
+
+.geico {
+    clear:both;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: .75em;
+}
+
+.heading {
+    font-weight: bold;
+    text-align: center;
+   /*Put the line breaks in somehow*/
+    
+}
+
+.bigger {
+    font-size: 2em;
+}
+
+.smaller {
+    font-size: .75em;
+}
+
+.slightlybigger {
+    font-size: 1.2em;
+    display: block;
+    margin-bottom:50px;
+}
+
+.ownline {
+    display: block;
+}
+
+.horizontal_line {
+    width:100%;
+    height:1px;
+    background-color:gray;
+    clear:both;
+    margin-bottom:30px;
+}
+
+li {
+    margin-bottom: 50px;
+}
