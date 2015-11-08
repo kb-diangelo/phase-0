@@ -1,16 +1,16 @@
 3.4 Chrome DevTools Reflection - Nov 5th 2015
 
-![Different colors](imgs/3-4-colors.png)
+![Different colors](../imgs/3-4-colors.png)
 
-![Squares](imgs/3-4-boxes.png)
+![Squares](../imgs/3-4-boxes.png)
 
-![Equally spaced](imgs/3-4-spacing.png)
+![Equally spaced](../imgs/3-4-spacing.png)
 
-![With a header](imgs/3-4-header.png)
+![With a header](../imgs/3-4-header.png)
 
-![With a footer](imgs/3-4-footer.png)
+![With a footer](../imgs/3-4-footer.png)
 
-![With a sidebar](imgs/3-4-sidebar.png)
+![With a sidebar](../imgs/3-4-sidebar.png)
 
 
 
