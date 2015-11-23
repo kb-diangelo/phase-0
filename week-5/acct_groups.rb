@@ -62,14 +62,16 @@ end
 # REFACTORED SOLUTION
 
 def groups2(array_of_names)
-	array_of_names.shuffle! 				#introducing randomness
-	num_people = array_of_names.length 		#how many people do we have?
-	groups_5 = num_people % 4 				#how many groups will have 5
-	groups_4 = (num_people - (groups_5 * 5)) / 4 # how many groups will have 4
-	total_groups = groups_4 + groups_5 		#how many total groups
-
-	group_hash = Hash.new([])				#new hash initialized to empty arrays
 	
+	#introduce randomness by shuffling the input array
+	array_of_names.shuffle! 				
+
+	num_people = array_of_names.length 		
+	groups_5 = num_people % 4 				
+	groups_4 = (num_people - (groups_5 * 5)) / 4
+
+	group_hash = Hash.new([])				
+
 	num_group = 0
 	index = 0
 
@@ -94,17 +96,8 @@ def groups2(array_of_names)
 	end
 
 	return group_hash
-
 end
 
-
-
-
-
-# MISCELLANEOUS TESTING.
-p groups(my_fake_list)
-puts ""
-p groups2(my_fake_list)
 
 # REFLECTION
 =begin
@@ -112,15 +105,27 @@ p groups2(my_fake_list)
 
 - What was the most interesting and most difficult part of this challenge?
 
-	i
+	The hardest part was refactoring. I stared at my code for hours
+	and didn't even end up making any lasting changes. I will be 
+	interested to see how other people managed to get their programs
+	to be shorter, less repetitive, and more readable. I had the group
+	making part of the program in a separate method but it was really
+	even less readable than I had it here.
 
 - Do you feel you are improving in your ability to write pseudocode and break the problem down?
 
-	i
+	Yes I think so. The pseudocode is very helpful. As usual I think 
+	I could have spent even more time on it to make writing the program 
+	even faster.
 
 - Was your approach for automating this task a good solution? What could have made it even better?
 
-	i
+	You know I don't think it's a bad solution. It works for any number of 
+	people in the initial array, and groups them (in the refactored version)
+	into as many random groups of 4 as possible and then groups of 5.
+	It would have been even better if it could take arguments for how many people
+	should be in each group, and then outsourced the .times loops to a 
+	different function maybe.
 
 - What data structure did you decide to store the accountability groups in and why?
 
