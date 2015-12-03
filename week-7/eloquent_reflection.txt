@@ -1,0 +1,113 @@
+Introduction
+* Did you learn anything new about JavaScript or programming in general?
+
+I have had the benefit of completing the CodeCademy JS track before enrolling in DBC. Therefore I understand that JS is the language that makes web pages dynamic. About programming, Marjin Haverbeke writes about how we as programmers need to "[control] complexity". I think this is a good summary of what we as programmers trying to write the best possible code are about.
+
+* Are there any concepts you feel uncomfortable with?
+
+Not yet but I'm sure they're coming up.
+
+Ch. 1: Values, Types and Operators
+* Identify two similarities and two differences between JavaScript and Ruby syntax with regard to numbers, arithmetic, strings, booleans, and various operators.
+
+Like Ruby, JS has numbers, strings, Booleans, and objects, and all of these types of values can be given (variable) names. Also, the arithmatic operators +, -, *, /, and % are the same. Like in Ruby, the + can be used to concatenate strings. Also, the ternary operator ? works the same way in JS as in Ruby.
+
+Unlike Ruby, there is no difference between integers and floats; they are both just numbers. Also, JS has something called functions, which are similar to but not exactly like Ruby methods. JS has a special value called NaN (not a number) which is the result of nonsensical mathematic operations (like dividing by 0) and which is not equal to itself.
+
+That is more than two similarities and differences but I wanted to make sure I would remember them.
+
+Ch. 2: Program Structure
+* What is an expression?
+
+"A fragment of code that produces a value"
+
+* What is the purpose of semicolons in JavaScript? Are they always required?
+
+Semicolons terminate most statements in JS. They keep statements from running into one another. They are not always required but the rules about not including them are very complicated.
+
+* What causes a variable to return undefined?
+
+A variable returns undefined when it contains nothing but you ask for its value.
+
+* Write your own variable and do something to it in the eloquent.js file.
+
+(in the file)
+
+* What does console.log do and when would you use it? What Ruby method(s) is this similar to?
+
+It print something to the console, like p does in Ruby.
+
+* Write a short program that asks for a user to input their favorite food. After they hit return, have the program respond with "Hey! That's my favorite too!" (You will probably need to run this in the Chrome console (Links to an external site.) rather than node since node does not support prompt or alert). Paste your program into the eloquent.js file.
+
+(in the file)
+
+* Describe while and for loops
+
+while loops take the form 
+	while (condition is true) {
+	execute the block
+	}
+
+do loops always execute the block at least once and take the form
+	do {
+	the block
+	} while (condition is true);
+
+for loops define the initial state, something to check, what to do in between, and loop until that check is no longer passed
+	for (something intial; something to check; something acted upon to get it from initial -> no longer passing the check) {
+	some block
+	}
+
+break and continue are special keywords that either break out of a loop entirely (break;) or jump to the next iteration of the loop (continue;)
+
+
+* What other similarities or differences between Ruby and JavaScript did you notice in this section?
+
+Ruby and JS both have similar while loops but the do keyword means something different in JavaScript than in Ruby. Also the for loop has no exact equivalent in Ruby.
+
+* Complete at least one of the exercises (Looping a Triangle, FizzBuzz, of Chess Board) in the eloquent.js file.
+
+(in the file)
+
+Ch. 3: Functions
+* What are the differences between local and global variables in JavaScript?
+
+A local variable is defined within a function. It is only scoped to that function and cannot be accessed outside of it. A global variable is defined outside of a function. It can be accessed anywhere in the program, even in functions.
+
+* When should you use functions?
+
+When we want to "define new vocabulary" - when we want the program to be able to do the same thing over and over again (like a method in Ruby)
+
+* What is a function declaration?
+
+A shortcut to defining a function instead of using var function_name = function(parameters){block}. We can instead write function function_name(parameters){block}. It defines the variable function_name and points it at the function. Function declarations are exempt from the top-to-bottom flow of control and are "moved" up to the top of their scope.
+
+* Complete the minimum exercise in the eloquent.js file.
+
+(in the file)
+
+Ch. 4: 
+* What is the difference between using a dot and a bracket to look up a property? Ex. array.max vs array["max"]
+
+Both the dot and the bracket access a property of the thing they are called on but they are interpreted differently. The dot has to be a valid variable name that directly names the property. When you use square brackets, the expression between the brackets is evaluated to get the property name. 
+
+* Create an object called me that stores your name, age, three favorite foods, and a quirk in your eloquent.js file.
+
+(in file)
+
+* What is a JavaScript object with a name and value property similar to in Ruby?
+
+A hash!
+
+Reflection:
+* What are the biggest similarities and differences between JavaScript and Ruby?
+
+	Ruby and JavaScript have a lot of similarities. In both languages, methods can be called on certain things using the dot. Variables and functions/methods can be defined. Maybe I'm just not as used to JS but it seems less powerful and less readable than Ruby. The biggest differences is that in JS there are objects and in Ruby there are hashes (which make more sense than objects), and that in JS, almost everything is a variable of some kind while in Ruby everything is a Ruby object. 
+
+* Was some of your Ruby knowledge solidified by learning another language? If so, which concepts?
+
+Ideas about scope were solified by learning about global and local scope in JS.
+
+* How do you feel about diving into JavaScript after reading these chapters?
+
+I completed the CodeCademy course on JavaScript before enrolling in DBC but that feels like a long time ago. I am very unsure about my ability to code in JS and am very worried about the upcoming exercises.
