@@ -1,0 +1,15 @@
+What content was solidified in the process of completing this challenge?
+
+I was able to recall the different data types used in Ruby and the methods I found most useful for each.
+
+What content do you feel a bit fuzzy on still?
+
+I guess I still feel a little bit confused by some of the enumerable methods for hashes and arrays. I will review this subject in the book.
+
+What was the most difficult part of this challenge?
+
+The most difficult part of this challenge is finding the time and motivation to complete the work for this week, including this challenge, because I was sick all week.
+
+Has your ability to add CSS to format and position objects improved since week 3?
+
+Definitely! My website is pretty much how I want it so a lot of what I have to do now is simply pop material into the right place.
